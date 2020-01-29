@@ -12,9 +12,9 @@ public class Server {
 
         try{
             ServerBootstrap bootstrap=new ServerBootstrap();
-            bootstrap.group(boss,work).channel(NioServerSocketChannel.class).childHandler(null);
+            bootstrap.group(boss,work).channel(NioServerSocketChannel.class).childHandler(new Initial());
 
-            ChannelFuture channelFuture = bootstrap.bind(6668).sync();
+            ChannelFuture channelFuture = bootstrap.bind(8888).sync();
             channelFuture.channel().closeFuture().sync();
 
 
