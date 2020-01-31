@@ -1,14 +1,10 @@
-package com.netty.simple;
+package com.netty.simple1;
 
-import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
-import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-import io.netty.channel.ChannelPipeline;
 import io.netty.util.CharsetUtil;
 
-import java.nio.charset.Charset;
 import java.util.concurrent.TimeUnit;
 
 /**
