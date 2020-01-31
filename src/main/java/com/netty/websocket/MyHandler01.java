@@ -1,11 +1,10 @@
-package com.netty.websoclet;
+package com.netty.websocket;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 
 import java.time.LocalDateTime;
-import java.util.Locale;
 
 public class MyHandler01 extends SimpleChannelInboundHandler<TextWebSocketFrame> {
     @Override
